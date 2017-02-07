@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<button onClick="Add5()">5</button>
+<button onClick="Plus">+</button>
+<button onClick="Add3()">3</button>
+<button onClick="Show">=</button>
+
+
+<div id="display"></div>
+<div id="uitkomst"></div>
+
+
+
+
+<script>
+
+var getal1=0;
+
+	function Add5(){
+		document.getElementById('display').innerHTML += '5';
+	}
+
+	function Add3(){
+		document.getElementById('display').innerHTML += '3';
+	}
+
+	function Plus(){
+		getal1 = document.getElementById('display').innerHTML;
+		document.getElementById('display').innderHTML = '';
+	}
+
+	function Calculate(){
+		var getalInDiplay = parseInt(document.getElementById('uitkomst').innerHTML) = uitkomst;
+
+		var uitkomst
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+#display {
+	display: block;
+	margin-top: 1em;
+	width: 100px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	height: 22px;
+}
+
+#uitkosmt {
+	display: block;
+	height: 22px;
+	width: 100px;
+	background-color: grey;
+}
