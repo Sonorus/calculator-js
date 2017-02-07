@@ -2,47 +2,98 @@
 <html>
 <head>
 	<title>Calculator</title>
-	<link href="style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
+<div id="row1">
+	<button onclick="Add7()">7</button>
+	<button onclick="Add8()">8</button>
+	<button onclick="Add9()">9</button>
+</div>
 
-<button onClick="Add5()">5</button>
-<button onClick="Plus">+</button>
-<button onClick="Add3()">3</button>
-<button onClick="Show">=</button>
+<div id="row2">
+	<button onclick="Add4()">4</button>
+	<button onclick="Add5()">5</button>
+	<button onclick="Add6()">6</button>
+</div>
+
+<div id="row3">
+	<button onclick="Add1()">1</button>
+	<button onclick="Add2()">2</button>
+	<button onclick="Add3()">3</button>
+</div>
+
+<button onclick="Add0()">0</button>
+<button onclick="Plus()">+</button>
+<button onclick="Calculate()">=</button>
 
 
 <div id="display"></div>
 <div id="uitkomst"></div>
 
 
-
-
 <script>
 
 var getal1=0;
 
-	function Add5(){
-		document.getElementById('display').innerHTML += '5';
+	function Add1() {
+		document.getElementById('display').innerHTML += '1';
 	}
 
-	function Add3(){
+	function Add2() {
+		document.getElementById('display').innerHTML += '2';
+	}
+
+	function Add3() {
 		document.getElementById('display').innerHTML += '3';
 	}
 
-	function Plus(){
-		getal1 = document.getElementById('display').innerHTML;
-		document.getElementById('display').innderHTML = '';
+	function Add4() {
+		document.getElementById('display').innerHTML += '4';
 	}
 
-	function Calculate(){
-		var getalInDiplay = parseInt(document.getElementById('uitkomst').innerHTML) = uitkomst;
-
-		var uitkomst
+	function Add5() {
+		document.getElementById('display').innerHTML += '5';
 	}
+
+	function Add6() {
+		document.getElementById('display').innerHTML += '6';
+	}
+
+	function Add7() {
+		document.getElementById('display').innerHTML += '7';
+	}
+
+	function Add8() {
+		document.getElementById('display').innerHTML += '8';
+	}
+
+	function Add9() {
+		document.getElementById('display').innerHTML += '9';
+	}
+
+	function Add0() {
+		document.getElementById('display').innerHTML += '0';
+	}
+
+
+function Plus() {
+	getal1 = parseInt(document.getElementById('display').innerHTML);
+	document.getElementById('display').innerHTML = '';
+}
+
+function Calculate() {
+	var getalInDisplay = parseInt(document.getElementById('display').innerHTML);
+
+	var uitkomst = getal1 + getalInDisplay;
+
+	document.getElementById('uitkomst').innerHTML = uitkomst;
+}
+
 
 </script>
+
 
 </body>
 </html>
