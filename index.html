@@ -6,31 +6,38 @@
 </head>
 <body>
 
+<div id="display"></div>
+
+<div id="operator">
+	<button onclick="Clear()">C</button>
+	<button onclick="()">/</button>
+	<button onclick="()">*</button>
+</div>
+
 <div id="row1">
 	<button onclick="Add7()">7</button>
 	<button onclick="Add8()">8</button>
 	<button onclick="Add9()">9</button>
+	<button onclick="()">-</button>
 </div>
 
 <div id="row2">
 	<button onclick="Add4()">4</button>
 	<button onclick="Add5()">5</button>
 	<button onclick="Add6()">6</button>
+	<button onclick="Plus()">+</button>
 </div>
 
 <div id="row3">
 	<button onclick="Add1()">1</button>
 	<button onclick="Add2()">2</button>
 	<button onclick="Add3()">3</button>
+	<button onclick="()">,</button>
 </div>
 
-<button onclick="Add0()">0</button>
-<button onclick="Plus()">+</button>
 <button onclick="Calculate()">=</button>
 
 
-<div id="display"></div>
-<div id="uitkomst"></div>
 
 
 <script>
@@ -88,7 +95,11 @@ function Calculate() {
 
 	var uitkomst = getal1 + getalInDisplay;
 
-	document.getElementById('uitkomst').innerHTML = uitkomst;
+	document.getElementById('display').innerHTML = uitkomst;
+}
+
+function Clear(){
+	document.getElementById('display').innerHTML = "";
 }
 
 
