@@ -1,26 +1,30 @@
-#display {
-	display: block;
-	margin-top: 1em;
-	width: 100px;
-	background-color: white;
-	color: black;
-	border: 1px solid black;
-	height: 22px;
+#calculator{
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+}
+button{
+    background-color: #FF0000; 
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover{
+  background-color: #B80000;
+  cursor: pointer;
+}
+    
+button{
+  margin: 10px;
+  border-radius: 7px;
 }
 
-#uitkomst {
-	display: block;
-	margin-top: 1em;
-	width: 100px;
-	background-color: white;
-	color: black;
-	border: 1px solid black;
-	height: 22px;
-}
-
-#uitkosmt {
-	display: block;
-	height: 22px;
-	width: 100px;
-	background-color: grey;
+p{
+  border-style: solid;
+  border-width: 2px;
+  height: 20px;
 }
